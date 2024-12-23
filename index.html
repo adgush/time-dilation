@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Dilation Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="card">
+      <h1 class="title">Time Dilation Calculator</h1>
+      <div class="section">
+        <label>Velocity (as a fraction of light speed): <span id="velocity-display">99%</span></label>
+        <input id="velocity-slider" type="range" min="0" max="100" value="99">
+      </div>
+      <div class="section">
+        <label>Destination: <span id="destination-display">Moon</span></label>
+        <input id="destination-slider" type="range" min="0" max="8" value="0">
+      </div>
+      <div class="results">
+        <p>Time for Traveler: <span id="traveler-time">0.0000 seconds</span></p>
+        <p>Time for Observer: <span id="observer-time">0.0000 seconds</span></p>
+        <p>Time Dilation Factor (γ): <span id="gamma-display">1.00</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
